@@ -1,9 +1,13 @@
 package net.uniquecomputer.storemanagerapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.R
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.ActionMode
+import androidx.core.view.GravityCompat
 import net.uniquecomputer.storemanagerapp.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -44,4 +48,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
 }

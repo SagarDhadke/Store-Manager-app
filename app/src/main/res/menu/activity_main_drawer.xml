@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/orders"
+            android:iconTint="@color/black"
+            android:title="Orders" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/basket"
+            android:title="Products" />
+
+        <item
+            android:id="@+id/nav_add_product"
+            android:icon="@drawable/add"
+            android:title="Add Products" />
+        <item
+            android:id="@+id/nav_brands"
+            android:icon="@drawable/brands"
+            android:title="Brands" />
+
+        <item
+            android:id="@+id/nav_add_brands"
+            android:icon="@drawable/add_brand"
+            android:title="Add Brands" />
+
+        <item
+            android:id="@+id/nav_delivery_boy"
+            android:icon="@drawable/delivery"
+            android:title="Delivery Boy" />
+        <item
+            android:id="@+id/customer"
+            android:icon="@drawable/customer"
+            android:title="Customer" />
+        <item
+            android:id="@+id/change_language"
+            android:icon="@drawable/language"
+            android:title="Change Language" />
+        <item
+            android:id="@+id/ticket"
+            android:icon="@drawable/support_agent"
+            android:title="Ticket" />
+        <item
+            android:id="@+id/return_request"
+            android:icon="@drawable/return_requests"
+            android:title="Return Request" />
+
+    </group>
+
+    <item android:title="Privacy &amp; Tearms">
+
+<menu>
+    <group>
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:icon="@drawable/lock"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/nav_terms_condition"
+        android:icon="@drawable/terms"
+        android:title="Tearm &amp; Conditions" />
+    </group>
+
+</menu>
+    </item>
+
+    <item android:title="LogOut">
+    <menu>
+        <group>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </group>
+    </menu>
+    </item>
+
+
+</menu>
+
+
