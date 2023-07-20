@@ -4,4 +4,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/hamburger" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="Admin App"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/filter" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/search" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#61C0F6"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/orders" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="103 \n Orders"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#F39C0F"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/products" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="92 \n Products"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#DC4B38"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/deliveryboy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="29 \n Delivery Boy"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
